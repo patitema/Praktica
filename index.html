@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnTimeMove</title>
+    <link rel="ICON" type="imge/x-icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <img src="./assets/images/LOGO.png" alt="Лого">
+            <ul class="pages">
+                <a href="#about">Основное</a>
+                <a href="#statistic">Статистика</a>
+                <a href="#dellivery">Оформить</a>
+                <a href="#reports">Отзывы</a>
+            </ul>
+        </nav>
+        <div class="info">
+            <div class="Head_info">
+                <h2>Добро пожаловать <br> в OnTimeMove</h2>
+                <button>Оформить заказ</button>
+            </div>
+            <div class="Head_img">
+                <img src="./assets/images/Фура.png" alt="">
+            </div>
+        </div>
+        
+    </header>
+    <main>
+        <div id="about" class="about_company">
+            <h3>О компании</h3>
+            <p>OnTimeMove — это <span>надежный</span> партнер в сфере доставки и перевозок с 2010 года.
+            Мы специализируемся на предоставлении <span>качественных</span> логистических услуг, помогая 
+            нашим клиентам решать задачи <span>любой</span> сложности в <span>кратчайшие</span> сроки.</p>
+        </div>
+        <div class="our_advantages">
+            <h3>Наши преимущества</h3>
+            <ul>
+                <li class="tab1">
+                    <div class="border_tab"><div class="head_tab"><h3>Опыт и надёжность</h3></div></div>
+                    <div class="body_tab"><p>Более 13 лет успешной работы на рынке логистики.</p></div>
+                </li>
+                <li class="tab2">
+                    <div class="border_tab"><div class="head_tab"><h3>Широкий спектр услуг</h3></div></div>
+                    <div class="body_tab"><p>Мы предлагаем полный комплекс услуг по доставке 
+                        и перевозкам, включая грузоперевозки, курьерскую доставку, 
+                        переезды и многое другое.</p></div>
+                </li>
+                <li class="tab3">
+                    <div class="border_tab"><div class="head_tab"><h3>Индивидуальный подход</h3></div></div>
+                    <div class="body_tab"><p>Каждый клиент для нас уникален. Мы разрабатываем персонализированные 
+                        решения, чтобы максимально удовлетворить ваши потребности.</p></div>
+                </li>
+                <li class="tab4">
+                    <div class="border_tab"><div class="head_tab"><h3>Современный автопарк</h3></div></div>
+                    <div class="body_tab"><p>Наш парк транспортных средств оснащен всем необходимым 
+                        для безопасной и оперативной доставки.</p></div>
+                </li>
+                <li class="tab5">
+                    <div class="border_tab"><div class="head_tab"><h3>Профессиональная команда</h3></div></div>
+                    <div class="body_tab"><p>Наши сотрудники — это опытные специалисты, которые всегда 
+                        готовы помочь и ответить на ваши вопросы.</p></div>
+                </li>
+            </ul>
+        </div>
+        <div id="statistic" class="statistic">
+            <h3>Статистика</h3>
+            <ul class="statistic_list">
+                <li><p>Совершенно перевозок: 10 000</p><img src="./assets/images/Галочка.png" alt=""></li>
+                <li><p>Заказы в процессе доставки: 1000</p><img src="./assets/images/Грузоперевозка.png" alt=""></li>
+                <li><p>Отзывы</p><img src="./assets/images/Отзывы.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="promo">
+            <img src="./assets/images/Время хедер (Среднее).png" alt="">
+            <div class="promo_container">
+                <div>
+                    <p>Ещё быстрее! <br> Попробуйте "<span>Экспресс доставку</span>"</p>
+                    <img src="./assets/images/Время.png" alt="">
+                </div>
+                <button>Попробовать</button>
+            </div>
+        </div>
+        <div id="dellivery" class="Dellivery">
+            <h3>Оформить доставку</h3>
+            <form id="Form"  action="">
+                <input type="email" placeholder="почта" required>
+                <input type="tel" placeholder="телефон" required>
+                <input type="text" placeholder="фио" required>
+                <input type="text" placeholder="откуда" required>
+                <input type="text" placeholder="куда" >
+                <ul class="buttons">
+                    <li><input type="checkbox"><p><span>Экспресс доставка</span></p></li>
+                    <li><input type="checkbox"><p>Перенос товара</p></li>
+                </ul>
+                <button id="sub_butt" type="submit">Оформить</button>
+            </form>
+        </div>
+        <div id="reports" class="let_report">
+            <h3>Оставить отзыв</h3>
+            <div class="report_container">
+                <ul class="stars">
+                    <li class="star1"><img src="./assets/images/path.png" alt=""></li>
+                    <li class="star2"><img src="./assets/images/path.png" alt=""></li>
+                    <li class="star3"><img src="./assets/images/path.png" alt=""></li>
+                    <li class="star4"><img src="./assets/images/path.png" alt=""></li>
+                    <li class="star5"><img src="./assets/images/path.png" alt=""></li>
+                </ul>
+                <form action="">
+                    <input type="text" placeholder="Оставьте отзыв" required>
+                    <button id="rep_sub_butt" type="submit">Отправить</button>
+                </form>
+            </div>
+            
+        </div>
+        <div class="reports">
+            <div class="reports_container">
+                <h3>Отзывы</h3>
+                <ul class="reports_list">
+                    <li>
+                    <div class="Rhead">
+                        <p class="name">Артём А.П</p>
+                        <ul class="stars_rep">
+                            <li class="rep_stars1"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                            <li class="rep_stars2"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                            <li class="rep_stars3"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                            <li class="rep_stars4"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                            <li class="rep_stars5"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="Rbody">
+                        <p>Всё прошло отлично. Быстро доставили без каких 
+                        либо проблем. В следующий раз воспользуюсь этой же компанией, всем советую!</p>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="Rhead">
+                            <p class="name">Максим Б.А</p>
+                            <ul class="stars_rep">
+                                <li class="rep_stars1"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                                <li class="rep_stars2"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                                <li class="rep_stars3"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                                <li class="rep_stars4"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                                <li class="rep_stars5"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="Rbody">
+                            <p>Всё прошло отлично. Быстро доставили без каких 
+                            либо проблем. В следующий раз воспользуюсь этой же компанией, всем советую!</p>
+                        </div>
+                        </li>
+                        <li>
+                            <div class="Rhead">
+                                <p class="name">Евгения А.Е</p>
+                                <ul class="stars_rep">
+                                    <li class="rep_stars1"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                                    <li class="rep_stars2"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                                    <li class="rep_stars3"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                                    <li class="rep_stars4"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                                    <li class="rep_stars5"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="Rbody">
+                                <p>Всё прошло отлично. Быстро доставили без каких 
+                                либо проблем. В следующий раз воспользуюсь этой же компанией, всем советую!</p>
+                            </div>
+                            </li>
+                            <li>
+                                <div class="Rhead">
+                                    <p class="name">Ян Т.С</p>
+                                    <ul class="stars_rep">
+                                        <li class="rep_stars1"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                                        <li class="rep_stars2"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                                        <li class="rep_stars3"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                                        <li class="rep_stars4"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                                        <li class="rep_stars5"><img src="/assets/images/Активная звезда.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="Rbody">
+                                    <p>Всё прошло отлично. Быстро доставили без каких 
+                                    либо проблем. В следующий раз воспользуюсь этой же компанией, всем советую!</p>
+                                </div>
+                            </li>
+                </ul>
+                <button type="button" id="view_more">Увидеть больше</button>
+            </div>
+        </div>
+            
+    </main>
+    <footer>
+        <div class="foot_container">
+            <img src="./assets/images/LOGO.png" alt="">
+            <hr></hr>
+            <ul>
+                <li><a href="">Обратная связь</a></li>
+                <li><a href="">Статистика</a></li>
+                <li><a href="">О нас</a></li>
+            </ul>
+            <hr></hr>
+            <p>Авторские права © 2010-2025 On Time Move Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="./scripts/stars.js"></script>
+</body>
+</html>

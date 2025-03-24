@@ -1,0 +1,623 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'AngryBirds', sans-serif;
+}
+
+@font-face{
+    font-family: 'AngryBirds';
+    src: url(../fonts/Angry_Birds_Rus.ttf) format('truetype');
+}
+
+#about, #dellivery, #reports, #statistic{
+    scroll-margin-top: 100px;
+}
+
+a{
+    color: #000;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    transition: all 0.15s ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #d400ff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body,html{
+    background-color: #FFF;
+    color: black;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #000;
+    padding-bottom: 100px;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    background: rgba(190, 190, 190, 0.7);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    backdrop-filter: blur(50px);
+    z-index: 1000;
+}
+
+nav  a{
+    transition: all 0.05s ease-in-out;
+}
+
+nav  a:hover{
+    color: #FFF;
+    text-shadow: 0 0 2px #000;
+}
+
+nav > img{
+    position: absolute;
+    width: 140px;
+    height: 80px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+
+.pages{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;
+    list-style: none;
+}
+
+.pages > li{
+    width: 137px;
+    height: 40px;
+    
+}
+
+.pages a{
+    font-size: 35px;
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+.info{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.Head_info{
+    text-align: center;
+}
+
+.Head_info > h2{
+    font-size: 60px;
+}
+
+.Head_info > button{
+    margin-top: 25px;
+    width: 400px;
+    height: 100px;
+    border-radius: 40px;
+    border: none;
+    background-color: #FF7495;
+    font-size: 40px;
+}
+
+.Head_img > img{
+    width: 840px;
+    height: 677px;
+    transform: rotate(1.58deg);
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_company{
+    width: 1635px;
+}
+
+.about_company > h3{
+    margin-top: 40px;
+    font-size: 60px;
+    text-align: center;
+}
+
+.about_company > p{
+    margin-top: 40px;
+    font-size: 50px;
+    text-align: justify;
+}
+
+.about_company span{
+    text-decoration: underline;
+}
+
+.our_advantages{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.our_advantages  h3{
+    font-size: 60px;
+}
+
+.our_advantages > ul{
+    width: 1635px;
+    margin-top:40px ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 60px;
+}
+
+.our_advantages > ul li{
+    width: 480px;
+    height: 600px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.our_advantages > ul li:hover{
+    transform: scale(0.95);
+}
+
+.border_tab{
+    border: 3px dashed #000;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.head_tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    border-radius: 30px 30px 0px 0px;
+    background: linear-gradient(180.00deg, #FFF, transparent 100%);
+}
+
+.body_tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.head_tab > h3{
+    font-size: 45px;
+    text-align: center;
+}
+
+.body_tab > p{
+    font-size: 40px;
+    text-align: center;
+}
+
+.tab1{
+    background: rgb(184, 255, 182);
+}
+
+.tab2{
+    background: rgb(249, 199, 255);
+}
+
+.tab3{
+    background: rgb(254, 234, 172);
+}
+
+.tab4{
+    background: rgb(162, 201, 255);
+}
+
+.tab5{
+    background: rgb(255, 166, 166);
+}
+
+.statistic{
+    width: 100%;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #000;
+}
+
+.statistic > h3{
+    font-size: 60px;
+    text-align: center;
+}
+
+.statistic_list{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.statistic_list > li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.statistic_list > li p{
+    font-size: 50px;
+}
+
+.statistic_list img{
+    width: 45px;
+    height: 45px;
+    margin-left: 15px;
+}
+
+.promo{
+    width: 100%;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    border-bottom: 1px solid #000;
+}
+
+.promo > img{
+    width: 738px;
+    height: 736px;
+}
+
+.promo_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo_container p{
+    font-size: 50px;
+    text-align: center;
+}
+
+.promo_container p span{
+    background: linear-gradient(90deg, #FF00A7, #7200FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.promo_container img{
+    width: 50px;
+    height: 50px;
+}
+
+.promo_container > div{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.promo_container button{
+    width: 400px;
+    height: 100px;
+    border-radius: 40px;
+    border: none;
+    background-color: #FF7495;
+    font-size: 45px;
+    margin-top: 30px;
+}
+
+.Dellivery{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid #000;
+}
+
+.Dellivery h3{
+    font-size: 60px;
+}
+
+#Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Form > input{
+    margin-top: 35px;
+    width: 880px;
+    height: 85px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.buttons, .buttons li {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 30px;
+}
+
+.buttons span{
+    background: linear-gradient(90deg, #FF00A7, #7200FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.buttons li input{
+    width: 40px;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+#sub_butt{
+    margin-top: 20px;
+    width: 300px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #FF7495;
+    font-size: 35px;
+    border: none;
+}
+
+.let_report{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.let_report h3{
+    font-size: 60px;
+}
+
+.report_container{
+    width: 1650px;
+    
+}
+
+.stars{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: end;
+    align-items: end;
+}
+
+.stars li img{
+    width: 40px;
+    height: 40px;
+}
+
+.let_report form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rep_sub_butt{
+    margin-top: 20px;
+    width: 300px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #FF7495;
+    font-size: 35px;
+    border: none;
+}
+
+.let_report form input{
+    width: 100%;
+    height: 80px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.reports{
+    margin-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reports_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reports_container > h3{
+    font-size: 60px;
+    text-align: center;
+}
+
+.reports_list{
+    margin-top: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.reports_list > li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 20px;
+    height: 200px;
+}
+
+.Rhead{
+    height: 60px;
+    width: 100%;
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.name{
+    font-size: 25px;
+}
+
+.stars_rep{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.stars_rep img{
+    height: 40px;
+    width: 40px;
+}
+
+.Rbody{
+    width: 95%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Rbody p{
+    text-align: start;
+    font-size: 25px;
+}
+
+#view_more{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #777;
+}
+
+#view_more:hover{
+    transform: scale(1);
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+footer{
+    width: 100%;
+    background-color: #555555;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    height: 400px;
+    border-top: 3px solid #000;
+}
+
+.foot_container{
+    width: 95%;
+}
+
+.foot_container img{
+    width: 250px;
+    height: 153px;
+}
+
+.foot_container hr{
+    width: 300px;
+    margin: 10px 0 10px 0;
+    border: 1px solid #000;
+}
+
+.foot_container ul{
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.foot_container a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.foot_container a:hover{
+    text-decoration: underline;
+}
+
+.foot_container p {
+    font-size: 25px;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
