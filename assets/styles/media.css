@@ -1,0 +1,489 @@
+@media (max-width: 500px) {
+
+    body{
+        padding-top: env(safe-area-inset-top);
+        width: 100vw;
+    }
+
+    header{
+        height: 100vh;
+        padding-bottom: 0;
+        width: 100vw;
+        padding-top: env(safe-area-inset-top);
+    }
+
+    nav{
+        padding-top: env(safe-area-inset-top);
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 80px;
+    }
+
+    #burger{
+        position: absolute;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #burger span {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+    
+    #burger span::before,
+    #burger span::after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+    
+    #burger span::before {
+    top: -10px;
+    }
+    
+    #burger span::after {
+    top: 10px;
+    }
+
+    #burger.active span {
+        background-color: transparent;
+    }
+    
+    #burger.active span::before {
+    transform: rotate(45deg);
+    top: 0;
+    }
+    
+    #burger.active span::after {
+    transform: rotate(-45deg);
+    top: 0;
+    }
+
+    nav > img{
+        position: relative;
+        width: 110px;
+        height: 65px;
+        left: 0;
+        top: 0;
+        transform: translateY(0);
+    } 
+    .pages{
+        display: none;
+    }
+
+    .info{
+        margin-top: 160px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .Head_info{
+        text-align: center;
+    }
+    
+    .Head_info > h2{
+        font-size: 12vw;
+    }
+    
+    .Head_info > button{
+        margin-top: 25px;
+        width: 80vw;
+        height: 25vw;
+        border-radius: 30px;
+        border: none;
+        background-color: #FF7495;
+        font-size: 9vw;
+    }
+    
+    .Head_img > img{
+        width: auto;
+        height: 70vw;
+        transform: rotate(1.58deg);
+    }
+
+    /*main */
+    .about_company{
+        width: 100vw;
+    }
+    
+    .about_company > h3{
+        margin-top: 30px;
+        font-size: 12vw;
+    }
+    
+    .about_company > p{
+        margin-top: 20px;
+        padding: 0 20px 0 20px;
+        font-size: 7vw;
+        text-align: center;
+    }
+    
+
+    .our_advantages{
+        width: 100vw;
+        padding: 0 10px 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+        padding-bottom: 70px;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+    
+    .our_advantages  h3{
+        font-size: 12vw;
+        text-wrap: wrap;
+        text-align: center;
+    }
+    
+    .our_advantages > ul{
+        width: 100vw;
+        margin-top:30px ;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        gap: 20px;
+    }
+    
+    .our_advantages > ul li{
+        width: 70vw;
+        height: 40vh;
+        border: 1px solid #000;
+        border-radius: 30px;
+        padding: 0;
+        margin: 0;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .our_advantages > ul li:hover{
+        transform: scale(0.95);
+    }
+    
+    .border_tab{
+        border: 3px dashed #000;
+        border-radius: 30px 30px 0px 0px;
+    }
+    
+    .head_tab{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 8vh;
+        border-radius: 30px 30px 0px 0px;
+        background: linear-gradient(180.00deg, #FFF, transparent 100%);
+    }
+    
+    .body_tab{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+    }
+    
+    .head_tab > h3{
+        font-size: 7vw;
+    }
+    
+    .body_tab > p{
+        padding: 0 15px 0 15px;
+        font-size: 3vh;
+    }
+
+    .statistic{
+        width: 100vw;
+        margin-top: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #000;
+    }
+    
+    .statistic > h3{
+        font-size: 12vw;
+    }
+    .statistic_list{
+        width: 85vw;
+        margin: 0 auto 0 auto;
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .statistic_list > li{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .statistic_list > li p{
+        font-size:  10vw;
+        text-align: center;
+    }
+    
+    .statistic_list img{
+        width: 35px;
+        height: 35px;
+        margin-left: 1px;
+    }
+    
+    .promo{
+        width: 100%;
+        padding-bottom: 50px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        border-bottom: 1px solid #000;
+    }
+    
+    .promo > img{
+        width: 90vw;
+        height: auto;
+    }
+    
+    .promo_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .promo_container p{
+        font-size: 33px;
+        text-align: center;
+        margin-left: 50px;
+    }
+    
+    .promo_container p span{
+        background: linear-gradient(90deg, #FF00A7, #7200FF);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .promo_container img{
+        width: 35px;
+        height: auto;
+        margin-left: 0px;
+    }
+    
+    .promo_container button{
+        width: 300px;
+        height: 80px;
+        border-radius: 30px;
+        border: none;
+        background-color: #FF7495;
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    .Dellivery{
+        margin-top: 30px;
+        padding-bottom: 30px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-bottom: 1px solid #000;
+    }
+    
+    .Dellivery h3{
+        font-size: 40px;
+    }
+    
+    #Form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #Form > input{
+        margin-top: 35px;
+        width: 90vw;
+        height: 70px;
+        border-radius: 20px;
+        border: 1px solid #000;
+        text-align: center;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+    
+    .buttons{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+    
+    .buttons, .buttons li {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        font-size: 30px;
+    }
+    
+    .buttons span{
+        background: linear-gradient(90deg, #FF00A7, #7200FF);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .buttons li input{
+        width: 40px;
+        border-radius: 20px;
+        border: 1px solid #000;
+    }
+    
+    #sub_butt{
+        margin-top: 20px;
+        width: 300px;
+        height: 80px;
+        border-radius: 30px;
+        background-color: #FF7495;
+        font-size: 35px;
+        border: none;
+    }
+
+    .let_report{
+        margin-top: 30px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .let_report h3{
+        font-size: 40px;
+    }
+    
+    .report_container{
+        width: 90vw;
+        
+    }
+    
+    .stars{
+        width: 100vw;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        align-items: end;
+    }
+    
+    .stars li img{
+        width: 35px;
+        height: 35px;
+    }
+    
+    .let_report form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #rep_sub_butt{
+        margin-top: 20px;
+        width: 300px;
+        height: 80px;
+        border-radius: 30px;
+        background-color: #FF7495;
+        font-size: 35px;
+        border: none;
+    }
+    
+    .let_report form input{
+        width: 90vw;
+        height: 80px;
+        border-radius: 20px;
+        border: 1px solid #000;
+        text-align: center;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+
+    footer{
+        width: 100vw;
+        background-color: #555555;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        height: 400px;
+        border-top: 3px solid #000;
+    }
+    
+    .foot_container{
+        width: 95%;
+    }
+    
+    .foot_container img{
+        width: 250px;
+        height: 153px;
+    }
+    
+    .foot_container hr{
+        width: 300px;
+        margin: 10px 0 10px 0;
+        border: 1px solid #000;
+    }
+    
+    .foot_container ul{
+        margin-top: 20px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .foot_container a{
+        text-decoration: none;
+        font-size: 25px;
+        font-family: sans-serif;
+    }
+    
+    .foot_container a:hover{
+        text-decoration: underline;
+    }
+    
+    .foot_container p {
+        font-size: 25px;
+        margin-top: 20px;
+        font-family: sans-serif;
+    }
+} 

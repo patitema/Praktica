@@ -1,0 +1,100 @@
+header{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #000;
+    padding-bottom: 100px;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    background: rgba(190, 190, 190, 0.7);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    backdrop-filter: blur(50px);
+    z-index: 1000;
+}
+
+#burger{
+    display: none;
+}
+
+nav  a{
+    transition: all 0.05s ease-in-out;
+}
+
+nav  a:hover{
+    color: #FFF;
+    text-shadow: 0 0 2px #000;
+}
+
+nav > img{
+    position: absolute;
+    width: 140px;
+    height: 80px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+
+.pages{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;
+    list-style: none;
+}
+
+.pages > li{
+    width: 137px;
+    height: 40px;
+    
+}
+
+.pages a{
+    font-size: 35px;
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+.info{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.Head_info{
+    text-align: center;
+}
+
+.Head_info > h2{
+    font-size: 60px;
+}
+
+.Head_info > button{
+    margin-top: 25px;
+    width: 400px;
+    height: 100px;
+    border-radius: 40px;
+    border: none;
+    background-color: #FF7495;
+    font-size: 40px;
+}
+
+.Head_img > img{
+    width: 840px;
+    height: 677px;
+    transform: rotate(1.58deg);
+}
