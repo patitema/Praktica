@@ -1,8 +1,8 @@
 @media (max-width: 500px) {
 
     body{
-        padding-top: env(safe-area-inset-top);
         width: 100vw;
+        overflow-x: hidden;
     }
 
     header{
@@ -428,6 +428,99 @@
         border: none;
     }
     
+    .reports{
+        margin-top: 40px;
+        padding-bottom: 40px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .reports_container{
+        display: flex;
+        width: 90vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .reports_container > h3{
+        font-size: 60px;
+        text-align: center;
+    }
+    
+    .reports_list{
+        margin-top: 40px;
+        width: 90vw;
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+    }
+    
+    .reports_list > li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000;
+        border-radius: 20px;
+        height: 200px;
+    }
+    
+    .Rhead{
+        height: 60px;
+        width: 100vw;
+        padding: 0 10px 0 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #000;
+    }
+    
+    .name{
+        font-size: 25px;
+    }
+    
+    .stars_rep{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+    }
+    .stars_rep img{
+        height: 40px;
+        width: 40px;
+    }
+    
+    .Rbody{
+        width: 95vw;
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Rbody p{
+        text-align: start;
+        font-size: 25px;
+    }
+    
+    #view_more{
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        margin-top: 20px;
+        color: #777;
+    }
+    
+    #view_more:hover{
+        transform: scale(1);
+        box-shadow: none;
+        text-decoration: underline;
+    }
+
     .let_report form input{
         width: 90vw;
         height: 80px;
@@ -449,17 +542,17 @@
     }
     
     .foot_container{
-        width: 95%;
+        width: 95vw;
     }
     
     .foot_container img{
-        width: 250px;
-        height: 153px;
+        width: 200px;
+        height: auto;
     }
     
     .foot_container hr{
-        width: 300px;
-        margin: 10px 0 10px 0;
+        width: 90vw;
+        
         border: 1px solid #000;
     }
     
@@ -482,7 +575,7 @@
     }
     
     .foot_container p {
-        font-size: 25px;
+        font-size: 20px;
         margin-top: 20px;
         font-family: sans-serif;
     }
